@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>zebronics</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="custom-assestes/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+  #box
+  {
+    background-image: url('custom-assests/images/b1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;;
+  }
+  
+h1
+{
+  padding-top: 100px;
+  font-family: poppins;
+  font-weight: lighter;
+  font-size:4.5em; 
+  color:aliceblue;
+
+}
+.lead
+{
+  font-family: poppins;
+  color:aliceblue;
+  font-size: 1.5em;
+}
+
+h2{
+  text-align: center;
+  font-family: poppins;
+  font-weight: lighter;
+  font-size:4.5em; 
+  color:aliceblue;
+}
+select{
+      width: 100px;
+  }
+
+  select{
+      width: 100%
+  }
+
+.online-sale-div {  
+padding: 10%;
+  padding-left: 15%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.online-sale-div label {
+  margin:  0;
+}
+
+.online-sale-div input,select {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  
+}
+
+.online-sale-div button {
+  padding: 10px 10px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.online-sale-div button:hover {
+  background-color:blue;
+}
+
+@media (max-width: 800px) {
+  .online-sale-div input {
+    margin: 10px 0;
+  }}
+  
+  .online-sale-div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.online-sale-div label
+{
+    padding: 5px;
+}
+#info1-k
+{
+    top: -20px;
+}
+#banner
+{
+    width:100%;
+    height: auto;
+}
+.bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color:wheat;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	&:hover {
+		color: #666;
+	}
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+
+.login-btn {
+  text-align:center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#button{
+  line-height: 55px;
+  padding: 0 30px;
+  background:red;
+  color: red;
+  display: inline-block;
+  font-family: roboto;
+  text-decoration: none;
+  font-size: 18px;
+  top:5%;
+  border-style: dotted;
+  border-width: 2px;
+  border-color:#00aeef;
+}
+
+#button:hover,
+#button:visited {
+  background:#00aeef;
+  color: #fff;
+}
+a:link {
+    color:#00aeef;
+}
+a:visited
+{
+  color:white;
+}
+body
+{
+  overflow-x: hidden;
+}
+
+</style>
+    </head>
+<body>
+    <img src="custom-assests/images/b4.jpg" width="100%" height="auto">
+    
+    <div class="login-btn">
+      <div id="price">
+        <b><strike style="color:grey;padding-right:1%">₹400</strike></b>
+
+                            <b><label style="color:dodgerblue" for="color">₹350</label></b>
+        </div>                    
+      <a href="" id="button" data-toggle="modal" data-target="#login-modal">BUY NOW</a>
+      </div> 
+      
+      <div class="modal" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+              <div class="modal-dialog">
+              <div class="loginmodal-container">
+                <h1>Login to Your Account</h1><br>            
+                <div class="online-sale-div">
+                  <!-- Follow classname only -->
+                  <label>Stock :</label>
+                  <label class="stock-status"></label>
+                  
+                  <!-- Strickly follow the php code also calss names id and names -->
+                    <?php if (isset($this->productVariation['variations']) && count($this->productVariation['variations']) > 0) {
+                        foreach ($this->productVariation['variations'] as $variationParams) {
+                            $required = ($variationParams['required'] == 1) ? 'varIsRequired' : ""; ?>
+                            <?php if ($variationParams['type'] == 'select') { ?>
+                                <select class="variation-select outline-input cart-variation <?php echo $required; ?>" id="param<?php echo $variationParams['option_id']; ?>" name="param<?php echo $variationParams['option_id']; ?>">
+                                    <option value=""> Select <?php echo $variationParams['name']; ?></option>
+                                </select>
+                            <?php  }
+                    }
+                  } ?>
+                  
+                  <!-- follow class id and onclick function here -->
+                    <label>Pincode Check:</label>
+                    <input style="width: 100px;" type="text" id="zibCode" placeholder="Enter pin" name="pin">
+                  <button id="<?php echo $this->product['product']['product_name']; ?>" onclick="checkPincode(this);">check</button>
+                  
+                  <!-- Success message for pincode check -->
+                  <div class="success-alert"></div>
+                  <!-- Error message for pincode check -->
+                    <div class="danger-alert alert-danger"></div>
+                  <!-- Must follow classname for increment and decrement the cart values -->
+                  
+                  <div class="enumerator">
+                    <!-- Decrement classname -->
+                    <span class="js-minus_btn enumerator__btn">-</span>
+                    <!-- Showing the increment values also not accept the zero qty please follow type and all those attributes with php code -->
+                    <input type="number" value="<?php echo !empty($this->productExist['qty']) ? $this->productExist['qty'] : 1; ?>" class="enumerator__input cart-qty" data-productname="<?php echo $this->product['product']['product_name']; ?>" onchange="this.value = minMax(this.value, 1, 1000)">
+                    <!-- Increment classname -->
+                    <span class="js-plus_btn enumerator__btn">+</span>
+                  </div>
+                  
+                  <!-- Please follow buynow button attributes with php code here -->
+                  <button data-categoryslug="<?php echo $this->product['product']['category_slug']; ?>" data-productslug="<?php echo $this->product['product']['product_slug']; ?>" data-name="<?php echo $this->product['product']['product_name']; ?>" onclick="addToCart('<?php echo $this->product['product']['product_name']; ?>',this);">Buynow</button>
+                </div>
+            </div>
+                </div>
+              </div>
+            
+
+
+
+  <div id="box">
+  <div class="container">
+  
+    <div class="row">
+      <div class="col-md-6">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img data-aos="zoom-in-up" src="custom-assests/images/s1.png" alt="" class="w-100">
+      </div>
+      <div class="col-md-6">
+        <div class="row align-items-center h-100">
+          <div class="col">
+          <h1 data-aos="zoom-in-down"> R G B LIGHTS</h1>
+            <p class="lead" data-aos="zoom-in-down">Uplift your senses with RGB lights that come with Zeb-Moving Monster 2x7 Plus to set in the perfect ambiance according to your mood.
+            <br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="box">
+      <div class="container">
+      
+        <div class="row">
+          <div class="col-md-6">
+            <img data-aos="zoom-in-up" src="custom-assests/images/s3.png" alt="" class="w-100" >
+          </div>
+          <div class="col-md-6">
+            <div class="row align-items-center h-100">
+              <div class="col">
+              <h1 data-aos="zoom-in-down"> L E D DISPLAY</h1>
+                <p class="lead" data-aos="zoom-in-down">Zeb-Moving Monster 2x7 comes with an LED display with information pertaining to mode and volume controls. Apart from the LED display the speaker also comes with separate controls for bass, treble and volume.
+                <br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+<div id="box">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img data-aos="zoom-in-right" src="custom-assests/images/s2.png" alt="" class="w-100" >
+    </div>
+    <div class="col-md-6">
+      <div class="row align-items-center h-100">
+        <div class="col">
+        <h1 data-aos="zoom-in-down"> Microphone </h1>
+          <p class="lead" data-aos="zoom-in-down">Bring life to your party with a wireless mic! Host your own karaoke competitions and listen to your own recordings after you’re done singing. A microphone hook comes along with the speaker.
+          <br /><br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+
+    <script  src="js/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 3000,
+      });
+    </script>
+    
+
+
+</body>
+
+</html>
